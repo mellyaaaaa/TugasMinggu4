@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmin - Film Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Filmin</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Watchlist</a>
+                <a href="#">Popular</a>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </header>
+        <section class="welcome">
+            <h1>Welcome</h1>
+            <p>Please search for the film you want to review</p>
+            <input type="text" class="search-bar" placeholder="Search" id="searchInput">
+        </section>
+
+        <section class="movie-section" id="trendingSection">
+            <h2>Trending</h2>
+            <div class="movie-grid" id="trendingGrid"></div>
+        </section>
+
+        <section class="movie-section" id="latestSection">
+            <h2>Latest</h2>
+            <div class="movie-grid" id="latestGrid"></div>
+        </section>
+
+        <section class="movie-section" id="resultSection" style="display: none;">
+            <h2>Results</h2>
+            <div class="movie-grid" id="resultGrid"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
